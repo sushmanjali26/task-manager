@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Creative Task Manager</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="task-manager shadow-lg p-4 rounded-4">
+    <h1 class="mb-4 text-center gradient-text">Your Tasks</h1>
+    <div class="input-group mb-4">
+      <input
+        type="text"
+        id="taskInput"
+        class="form-control form-control-lg"
+        placeholder="What’s on your mind?"
+        aria-label="Add a new task"
+        autocomplete="off"
+      />
+      <button class="btn btn-gradient btn-lg" id="addTaskBtn" type="button">Add Task</button>
+    </div>
+    <ul class="list-group" id="taskList"></ul>
+    <p id="emptyState" class="text-center text-muted mt-5 fs-5">No tasks yet — get started!</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
