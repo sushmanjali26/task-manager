@@ -1,0 +1,117 @@
+/* ---------- Base Layout & Background ---------- */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1600&q=80')
+              no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+/* ---------- Header ---------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5em;
+  color: #ffd54f;
+}
+
+/* ---------- Task Input Section ---------- */
+.task-input {
+  margin-top: 25px;
+  display: flex;
+  gap: 10px;
+}
+
+input[type="text"],
+select {
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  flex-grow: 1;
+}
+
+select {
+  background: #fff;
+  color: #000;
+  flex-grow: 0;      /* keeps dropdown size minimal */
+  min-width: 120px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #ffca28;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ffc107;
+}
+
+/* ---------- Filters ---------- */
+.filters {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.filters button {
+  flex-grow: 1;
+  margin: 5px;
+}
+
+/* ---------- Task List ---------- */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+li {
+  background: rgba(255, 255, 255, 0.15);
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+li div button {
+  margin-left: 6px;
+  font-size: 0.9em;
+  padding: 6px 10px;
+}
+
+/* Completed‑task appearance */
+.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  margin-top: 30px;
+  font-size: 0.9em;
+  text-align: center;
+  color: #ffc107;
+}
